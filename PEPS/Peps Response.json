@@ -1,0 +1,131 @@
+{
+    "responseHeader": {
+        "requestType": "PepSanctions01",
+        "clientReferenceId": "PEPS_SANCTIONS1",
+        "expRequestId": "RB000668920683",
+        "messageTime": "2022-05-18T11:25:01Z",
+        "overallResponse": {
+            "decision": "CONTINUE",
+            "decisionText": "Continue",
+            "decisionReasons": [
+                "No relevant Hunter matches present"
+            ],
+            "recommendedNextActions": [],
+            "spareObjects": []
+        },
+        "responseCode": "R0201",
+        "responseType": "INFO",
+        "responseMessage": "Workflow Complete.",
+        "tenantID": "X241B4TY"
+    },
+    "clientResponsePayload": {
+        "orchestrationDecisions": [
+            {
+                "sequenceId": "1",
+                "decisionSource": "Hunter",
+                "decision": "NO",
+                "decisionReasons": [
+                    "No relevant Hunter matches present"
+                ],
+                "score": 0,
+                "decisionText": "No relevant Matches",
+                "nextAction": "Continue",
+                "decisionTime": "2022-05-18T11:25:03Z"
+            }
+        ],
+        "decisionElements": [
+            {
+                "serviceName": "Hunter",
+                "score": 0,
+                "appReference": "PEPS_SANCTIONS1",
+                "warningsErrors": [
+                    {
+                        "responseType": "WARNING",
+                        "responseCode": "104001",
+                        "responseMessage": "One or more versions of the requested submission do not have a score."
+                    }
+                ],
+                "otherData": {
+                    "response": {
+                        "matchSummary": {
+                            "totalMatchScore": "0",
+                            "matches": 0
+                        },
+                        "errorWarnings": {
+                            "errors": {
+                                "error": [],
+                                "errorCount": 0
+                            },
+                            "warnings": {
+                                "warning": [
+                                    {
+                                        "number": "104001",
+                                        "message": "One or more versions of the requested submission do not have a score.",
+                                        "values": {
+                                            "value": []
+                                        }
+                                    }
+                                ],
+                                "warningCount": 1
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "originalRequestData": {
+        "application": {
+            "applicantEntities": [
+                {
+                    "contactId": "PEP_ORG_1",
+                    "entityType": "PEP_ORG"
+                }
+            ],
+            "applicants": [
+                {
+                    "applicantType": "MAIN_APPLICANT",
+                    "contactId": "MA_1",
+                    "id": "MA_APPLICANT1",
+                    "type": "INDIVIDUAL"
+                }
+            ],
+            "originalRequestTime": "2022-05-18T11:25:01Z",
+            "productDetails": {
+                "productCode": "MS_CON"
+            },
+            "status": "ACCPT"
+        },
+        "contacts": [
+            {
+                "addresses": [
+                    {
+                        "addressType": "CURRENT",
+                        "id": "MA_CADDRESS1",
+                        "postal": "BT1 6HH"
+                    }
+                ],
+                "id": "MA_1",
+                "person": {
+                    "names": [
+                        {
+                            "firstName": "DaY",
+                            "id": "MA_NAME1",
+                            "surName": "34017",
+                            "title": "MR",
+                            "type": "CURRENT"
+                        }
+                    ],
+                    "personDetails": {
+                        "dateOfBirth": "2000-01-01",
+                        "pepsSanctionsFlag": "Y",
+                        "yearOfBirth": "2000"
+                    },
+                    "personIdentifier": "",
+                    "typeOfPerson": "APPLICANT"
+                }
+            }
+        ],
+        "source": ""
+    }
+}
